@@ -49,7 +49,7 @@ function Header() {
   );
 }
 
-function TestStuff () {
+/* function TestStuff () {
   const Heihei = {
     name: 'sarah',
     age: 1
@@ -58,7 +58,7 @@ function TestStuff () {
   const [,, val2] = Test; //dekonstruere array
 
   const {name, age} = Heihei; //destrukturer høyre side
-}
+} */
 
 
 export default App;

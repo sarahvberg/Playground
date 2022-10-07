@@ -24,39 +24,7 @@ export const AboutPage = () => {
                             publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
                 </div>
-
-                <div className="row">
-                    <Test></Test>
-                </div>
             </div>
         </div>
     );
 }
-
-const USERS_URL: string = 'https://jsonplaceholder.typicode.com/users';
-const fetchUsers = (setFn: any) => {
-    console.log('mounted');
-    fetch(USERS_URL).then((res) => res.json()).then((data) => setFn(data))
-    
-    return () => console.log('dismount')
-}
-
-function Test() {
-    const [state, setState] = useState<any>({});
-    const [users, setUsers] = useState<Array<any>>([])
-
-    useEffect(() => { fetchUsers(setUsers) }, []);
-
-    return (
-        <div className="row">
-            {users.map((user: any) => (<p key={user.id}>{user.name}</p>))}
-            <button onClick={() => setState((previous: any) => previous)}>Minus</button>
-            <button onClick={() => setState((previous: any) => {
-                previous.hei = 'hei'
-                return {...previous} //spread
-            })}>Pluss</button>
-        </div>
-    );
-}   
-
-// const [users, setUsers] = useState<any[]>([])

@@ -49,6 +49,9 @@ header nav ul li a:hover {
   border-bottom: 2px solid #fff;
   color: #fff;
 }
+header nav ul li a.isActive {
+  border-bottom: 1px solid white;
+}
 nav span {
   color: #fff;
   font-size: 35px; 
@@ -80,3 +83,6 @@ nav span {
   left: 0;
   z-index: 2;
 }
+
+/*Margins and paddings*/
+.mt-50 { margin-top: 50px; }
