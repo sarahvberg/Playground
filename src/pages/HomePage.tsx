@@ -1,4 +1,4 @@
-import homeImage from '../assets/Botw.jpg';
+
 
 export function HomePage() {
     return (

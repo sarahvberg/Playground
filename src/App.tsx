@@ -4,6 +4,7 @@ import './App.css';
 import { InfoPage } from './InfoPage';
 import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
+import { Header } from './components/Header';
 
 function App() {
   return (
@@ -27,25 +28,6 @@ function LayoutWithHeader() {
       <Outlet />
       </main>
     </>
-  );
-}
-
-function Header() {
-  
-  return (
-    <header>
-    <nav>
-      <span>Sarah</span>
-      <ul>
-        <li>
-          <NavLink end to="/" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>About</NavLink>
-        </li>
-      </ul>
-    </nav>
-  </header>
   );
 }
 
