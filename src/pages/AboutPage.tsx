@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import aboutImage from '../assets/cowboy.png';
 
 export const AboutPage = () => {
