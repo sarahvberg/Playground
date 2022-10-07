@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import aboutImage from '../assets/cowboy.png';
+import aboutImage from '../assets/meInArt.png';
 
 
 

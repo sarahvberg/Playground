@@ -2,8 +2,7 @@
 
 export function HomePage() {
     return (
-        <div className="container-fluid main-wrapper">
-            <div className="bg-overlay"></div>
+        <div className="container-fluid">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
