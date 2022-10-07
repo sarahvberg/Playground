@@ -4,7 +4,7 @@ import './App.css';
 import { InfoPage } from './InfoPage';
 import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
-import { Header } from './components/Header';
+import { SideNav } from './components/SideNav';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
 function LayoutWithHeader() {
   return (
     <>
-      <Header />
+      <SideNav />
       <main>
       <Outlet />
       </main>

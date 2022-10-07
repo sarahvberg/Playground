@@ -1,14 +1,19 @@
 import { NavLink } from "react-router-dom";
+import aboutImage from '../assets/cowboy.png';
 
 
 
-
-export function Header() {
+export function SideNav() {
   
   return (
     <header>
     <nav>
-      <span>Sarah</span>
+      <div className="intro">
+        <div className="about-img">
+          <img src={aboutImage} alt=""/>
+        </div>
+      </div>
+      <span>Sarah Berg</span>
       <ul>
         <li>
           <NavLink end to="/" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>Home</NavLink>
