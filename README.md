@@ -1,7 +1,10 @@
-
 # Prerequisites:
-- docker  
-- docker with compose or docker-compose
+## If you are using docker:  
++ docker  
++ docker with compose or docker-compose
+## Without docker:  
++ node  
++ yarn
 
 
 # Run app
@@ -9,10 +12,16 @@
 `yarn`
 
 ## 2. Start app
-### docker-compose:
-`docker-compose up --build`
-### docker with compose
-`docker compose up --build`
 
-## 3. Go to application
++ **With docker**  
+run one of:  
+`docker-compose up --build`  
+`docker compose up --build`  
+app:  
 `localhost:5000`
+
++ **Without docker**  
+run:  
+`yarn run start`  
+app:  
+`localhost:3000`
