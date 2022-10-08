@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: registry.digitalocean.com/dfs-docr/test-circleci-do/test-app
+  repository: registry.digitalocean.com/dfs-docr/sarah-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
