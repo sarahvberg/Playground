@@ -1,10 +1,14 @@
 version: 2.1
+
+orbs:
+  k8s: digitalocean/k8s@0.1.1
+
 jobs:
   build:
     docker:
       - image: circleci/buildpack-deps:bullseye
     environment:
-      IMAGE_NAME: sarah-app/prod
+      IMAGE_NAME: sarah-app
     working_directory: ~/app
     steps:
       - checkout
@@ -19,11 +23,40 @@ jobs:
             docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD registry.digitalocean.com/dfs-docr
             docker tag $IMAGE_NAME registry.digitalocean.com/dfs-docr/$IMAGE_NAME:latest
             docker push registry.digitalocean.com/dfs-docr/$IMAGE_NAME:latest
+  deploy:
+    docker:
+      - image: circleci/buildpack-deps:bullseye
+    working_directory: ~/app
+    environment:
+      IMAGE_NAME: sarah-app
+    steps:
+      - checkout
+      - run:
+          name: Deploy
+          command: |
+            echo "Starting helm.."
+      - k8s/install
+      - k8s/initialize:
+          cluster: k8s-1-21-2-do-2-fra1-1626241040747
+      - run:
+          name: Initialize helm
+          command: |
+            curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+            chmod 700 get_helm.sh
+            ./get_helm.sh
+            helm upgrade sarah-app ./helm/sarah-app --install --create-namespace -n sarah-ns --set image.tag=latest
+
 workflows:
   version: 2
   build-deploy-master:
     jobs:
       - build:
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - build
           filters:
             branches:
               only: master
