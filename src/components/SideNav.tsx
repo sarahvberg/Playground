@@ -21,6 +21,9 @@ export function SideNav() {
         <li>
           <NavLink to="/about" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>About</NavLink>
         </li>
+        <li>
+          <NavLink to="/todo-list" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>Todo-list</NavLink>
+        </li>
       </ul>
     </nav>
   </header>
