@@ -33,7 +33,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding: 50px 10px;
+  padding: 50px 20px;
   position: fixed;
   left: 0;
   top: 0;
@@ -48,7 +48,7 @@ nav {
 .about-img {
   height: 100%;
   width: 200px;
-  padding: 10px;
+  padding: 20px;
 }
 .about-img img {
   border-radius: 50% 50%;
@@ -81,7 +81,7 @@ header nav ul li a.isActive {
 }
 nav span {
   color: #fff;
-  font-size: 35px; 
+  font-size: 28px; 
 }
 .image-container img {
   width: 100%;
