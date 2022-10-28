@@ -4,6 +4,7 @@ import { InfoPage } from './InfoPage';
 import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
 import { SideNav } from './components/SideNav';
+import { SmallProjectsPage } from './pages/SmallProjectsPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<LayoutWithHeader/>}>
           <Route index element={<HomePage/>} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="small-projects" element={<SmallProjectsPage />} />
         </Route>
       </Routes>
     </div>

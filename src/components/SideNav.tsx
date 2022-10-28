@@ -16,10 +16,13 @@ export function SideNav() {
       <span>Sarah Berg</span>
       <ul>
         <li>
-          <NavLink end to="/" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>Home</NavLink>
+          <NavLink end to="/" className={({isActive}) => (isActive ? 'isActive' : '')}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>About</NavLink>
+          <NavLink to="/about" className={({isActive}) => (isActive ? 'isActive' : '')}>About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/small-projects" className={({isActive}) => (isActive ? 'isActive' : '')}>Small Projects</NavLink>
         </li>
       </ul>
     </nav>
