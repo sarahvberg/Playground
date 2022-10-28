@@ -5,6 +5,7 @@ import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
 import { SideNav } from './components/SideNav';
 import { SmallProjectsPage } from './pages/SmallProjectsPage';
+import { TodoList } from './pages/TodoList';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<LayoutWithHeader/>}>
           <Route index element={<HomePage/>} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="todo-list" element={<TodoList />} />
           <Route path="small-projects" element={<SmallProjectsPage />} />
         </Route>
       </Routes>
