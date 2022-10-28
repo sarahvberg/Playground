@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 export function SmallProjectsPage() {
   return (
@@ -9,14 +10,48 @@ export function SmallProjectsPage() {
                   </div>
               </div>
           </div>
-          <div className="container">
+          <div className="container mt-50">
             <div className="row">
               <div className="col-md-4">
-                <h2>Counter</h2>
-                <p>Very simple counter</p>
+                <Counter/>
               </div>
             </div>
           </div>
       </div>
   );
+}
+
+
+function Counter() {
+  const [count, setCount] = useState(0); //useState brukes som regel øverst
+  // const [zelda, setZelda] = useState({name: 'Zelda', age: 2});
+
+  // function incrementAge() {
+  //   setZelda({...zelda })
+  // }
+
+  function increment() {
+    setCount((prev) => prev + 1);
+  }
+  function decrease() {
+    setCount((prev) => prev - 1);
+  }
+
+  return (
+    <>
+    <div className="counter">
+      <div className="overlay"></div>
+      <h3>Simple Counter</h3>
+      <h2 id="count-el">{count}</h2>
+      {/* <div>{JSON.stringify(zelda)}</div>
+      <button id="increment-btn" onClick={incrementAge}>Zelda</button> */}
+      <div className="btns">
+        <button id="increment-btn" onClick={increment}>+</button>
+        <button id="decrease-btn" onClick={decrease}>-</button>
+        <button id="clear-btn" onClick={() => setCount(0)}>CLEAR</button>
+      </div>
+    </div>
+    </>
+  )
+  
 }
