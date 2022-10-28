@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import aboutImage from '../assets/meInArt.png';
 
 
@@ -10,7 +10,7 @@ export function SideNav() {
     <nav>
       <div className="intro">
         <div className="about-img">
-          <img src={aboutImage} alt=""/>
+          <Link to={"/"}><img src={aboutImage} alt=""/></Link>
         </div>
         <span>Sarah Berg</span>
       </div>

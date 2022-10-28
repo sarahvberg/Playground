@@ -32,16 +32,5 @@ function LayoutWithHeader() {
   );
 }
 
-/* function TestStuff () {
-  const Heihei = {
-    name: 'sarah',
-    age: 1
-  }
-  const Test = [1,2,3];
-  const [,, val2] = Test; //dekonstruere array
-
-  const {name, age} = Heihei; //destrukturer høyre side
-} */
-
 
 export default App;
