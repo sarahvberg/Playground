@@ -4,6 +4,7 @@ import { InfoPage } from './InfoPage';
 import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
 import { SideNav } from './components/SideNav';
+import { SmallProjectsPage } from './pages/SmallProjectsPage';
 import { TodoList } from './pages/TodoList';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<HomePage/>} />
           <Route path="about" element={<AboutPage />} />
           <Route path="todo-list" element={<TodoList />} />
+          <Route path="small-projects" element={<SmallProjectsPage />} />
         </Route>
       </Routes>
     </div>
@@ -31,17 +33,6 @@ function LayoutWithHeader() {
     </>
   );
 }
-
-/* function TestStuff () {
-  const Heihei = {
-    name: 'sarah',
-    age: 1
-  }
-  const Test = [1,2,3];
-  const [,, val2] = Test; //dekonstruere array
-
-  const {name, age} = Heihei; //destrukturer høyre side
-} */
 
 
 export default App;

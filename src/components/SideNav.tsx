@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import aboutImage from '../assets/meInArt.png';
 
 
@@ -10,16 +10,19 @@ export function SideNav() {
     <nav>
       <div className="intro">
         <div className="about-img">
-          <img src={aboutImage} alt=""/>
+          <Link to={"/"}><img src={aboutImage} alt=""/></Link>
         </div>
+        <span>Sarah Berg</span>
       </div>
-      <span>Sarah Berg</span>
       <ul>
         <li>
-          <NavLink end to="/" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>Home</NavLink>
+          <NavLink end to="/" className={({isActive}) => (isActive ? 'isActive' : '')}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>About</NavLink>
+          <NavLink to="/about" className={({isActive}) => (isActive ? 'isActive' : '')}>About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/small-projects" className={({isActive}) => (isActive ? 'isActive' : '')}>Small Projects</NavLink>
         </li>
         <li>
           <NavLink to="/todo-list" className={({isActive}) => (isActive ? 'isActive' : 'nei')}>Todo-list</NavLink>
