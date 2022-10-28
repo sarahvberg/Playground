@@ -45,6 +45,11 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .about-img {
   height: 100%;
   width: 200px;
@@ -128,3 +133,37 @@ nav span {
 
 /*Margins and paddings*/
 .mt-50 { margin-top: 50px; }
+
+/*Media queries*/
+@media (max-width: 900px) {
+  header {
+    top: 0;
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav ul {
+    flex-direction: row;
+    padding-top: 0;
+  }
+  main {
+    margin: 0;
+    padding: 100px 20px;
+  }
+  .intro {
+    padding: 0 15px;
+    flex-direction: row;
+  }
+  .about-img {
+    width: 40px;
+    padding: 0;
+  }
+  .about-img img {
+    border-radius: 50% 50%;
+    width: 100%;
+  }
+}

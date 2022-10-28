@@ -34,7 +34,9 @@ function Counter() {
     setCount((prev) => prev + 1);
   }
   function decrease() {
-    setCount((prev) => prev - 1);
+    if(count !== 0) {
+      setCount((prev) => prev - 1);
+    }
   }
 
   return (

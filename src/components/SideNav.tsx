@@ -12,8 +12,8 @@ export function SideNav() {
         <div className="about-img">
           <img src={aboutImage} alt=""/>
         </div>
+        <span>Sarah Berg</span>
       </div>
-      <span>Sarah Berg</span>
       <ul>
         <li>
           <NavLink end to="/" className={({isActive}) => (isActive ? 'isActive' : '')}>Home</NavLink>
