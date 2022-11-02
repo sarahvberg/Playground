@@ -12,7 +12,11 @@ export function SideNav() {
   }
   
   return (
-    <header>
+    <header className={navOpen ? 'open' : 'close'}>
+      <FaArrowLeft 
+      className="menuIcon"
+      onClick={handleToggle}
+      />
     <nav>
       <div className="intro">
         <div className="about-img">
