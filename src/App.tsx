@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage';
 import { SideNav } from './components/SideNav';
 import { SmallProjectsPage } from './pages/SmallProjectsPage';
 import { TodoList } from './pages/TodoList';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="small-projects" element={<SmallProjectsPage />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 }

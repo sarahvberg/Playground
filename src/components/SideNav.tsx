@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import aboutImage from '../assets/meInArt.png';
 import { FaArrowLeft } from 'react-icons/fa';
-import React from "react";
 
 
 export function SideNav() {

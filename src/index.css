@@ -1,5 +1,6 @@
 
 main {
+  width: 100%;
   padding: 50px;
   margin: 0 0 0 13rem;
   transition: all 0.5s ease-in-out;
@@ -21,8 +22,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #06083d;
   position: relative;
+}
+html, body, #root, .fullPage {
+  height: 100%;
 }
 
 code {
@@ -129,7 +133,7 @@ header.close .menuIcon {
   height: auto;
 }
 .counter {
-  background-image: url("./assets/Botw.jpg");
+  background-image: url("./assets/gradient.JPG");
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -141,6 +145,7 @@ header.close .menuIcon {
   position: relative;
   color: #fff;
   z-index: 0;
+  border-radius: 7px;
 }
 .counter .btns {
   margin-top: 40px;
@@ -166,7 +171,10 @@ header.close .menuIcon {
   height: 100%;
   z-index: -1;
 }
-
+footer {
+  position: absolute;
+  bottom: 0;
+}
 /*Margins and paddings*/
 .mt-50 { margin-top: 50px; }
 

@@ -42,7 +42,6 @@ function Counter() {
   return (
     <>
     <div className="counter">
-      <div className="overlay"></div>
       <h3>Simple Counter</h3>
       <h2 id="count-el">{count}</h2>
       {/* <div>{JSON.stringify(zelda)}</div>
