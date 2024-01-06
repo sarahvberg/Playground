@@ -14,7 +14,7 @@ export function HomePage() {
 
             <div className="emoji-line">🐱🎮🪴🏃🏼‍♀️🍳🫧💻✨</div>
 
-            <div className="col-md-8 intro mt-50">
+            <div className="col-md-4 intro mt-50">
               <h1>Hello world! 🫶🏻 </h1>
               <p>
                 Jeg er en utvikler som elsker katten min, å ta bilder, drive med
