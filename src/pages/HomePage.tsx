@@ -8,9 +8,7 @@ export function HomePage() {
         <div className="row">
           <div className="intro col-md-12">
             <div className="about-img">
-              <Link to={"/"}>
-                <img src={aboutImage} alt="" />
-              </Link>
+              <img src={aboutImage} alt="" />
             </div>
 
             <div>Sarah Victoria Berg</div>
