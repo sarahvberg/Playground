@@ -1,21 +1,4 @@
 
-main {
-  padding: 50px;
-  margin: 0 0 0 13rem;
-  transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    width: 100%;
-} 
-.fullPage {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 100vh;
-}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -23,51 +6,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
   position: relative;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-header {
   background-color: #eeddd3;
-  color: black;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
-  height: 100%;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding: 50px 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
+
 }
-header.close {
-  left: -200px;
-}
-header.close + main {
-  margin: 20px;
-}
-nav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
-    -moz-transition: all 5s ease-in-out;
-    -o-transition: all 5s ease-in-out;
-    -ms-transition: all 5s ease-in-out;
+.fullPage {
+  padding: 50px;
 }
 .emoji-line {
   font-size: 12px;
@@ -89,49 +33,6 @@ nav {
 .about-img img {
   border-radius: 50% 50%;
   width: 100%;
-}
-header nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding-left: 0;
-  margin-bottom: 0;
-  padding-top: 100px;
-}
-header nav ul li {
-  margin: 10px 0;
-}
-header nav ul li a {
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
-}
-header nav ul li a:hover {
-  border-bottom: 2px solid #000;
-  color: #000;
-}
-header nav ul li a.isActive {
-  border-bottom: 2px solid black;
-}
-nav span {
-  color: #000;
-  font-size: 35px; 
-}
-.menuIcon {
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  transition: all 0.8s ease-in-out;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-}
-header.close .menuIcon {
-  right: -20px;
-  transform: rotate(-180deg);
 }
 .image-container img {
   width: 100%;
@@ -190,44 +91,7 @@ footer {
 
 /*Media queries*/
 @media (max-width: 900px) {
-  header {
-    top: 0;
-    height: 50px;
-    width: 100%;
-    padding: 15px;
+  .fullPage {
+    padding: 20px;
   }
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .navList a {
-    font-size: 14px;
-  }
-  .emoji-line { display: none;}
-  .socials { margin-left: 20px;}
-  .socials img { width: 40px;}
-  header nav ul {
-    flex-direction: row;
-    padding-top: 0;
-  }
-  main {
-    margin: 0;
-    padding: 100px 20px;
-  }
-  .intro {
-    padding: 0 15px;
-    flex-direction: row;
-  }
-  .intro span {
-    font-size: 16px;
-  }
-  .about-img {
-    width: 40px;
-    padding: 0;
-  }
-  .about-img img {
-    border-radius: 50% 50%;
-    width: 100%;
-  }
-  .menuIcon { display: none;}
 }

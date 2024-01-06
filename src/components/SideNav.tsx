@@ -1,11 +1,6 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import aboutImage from "../assets/meInArt.png";
-import linkedInIcon from "../assets/linkedIn.png";
-import instagramIcon from "../assets/instagramIcon.png";
-import githubIcon from "../assets/githubIcon.png";
+import { NavLink } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import React from "react";
 
 export function SideNav() {
   const [navOpen, setNavOpen] = useState(true);
@@ -18,36 +13,7 @@ export function SideNav() {
       <FaArrowLeft className="menuIcon" onClick={handleToggle} />
       <nav>
         <div className="intro">
-          <div className="about-img">
-            <Link to={"/"}>
-              <img src={aboutImage} alt="" />
-            </Link>
-          </div>
           <span>Sarah Berg</span>
-          <div className="emoji-line">🐱🎮🪴🏃🏼‍♀️🍳🫧🍅💻✨</div>
-          <div className="socials">
-            <a
-              href="https://www.linkedin.com/in/sarahvb/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={linkedInIcon} alt="LinkedIn logo" />
-            </a>
-            <a
-              href="https://github.com/sarahvberg"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={githubIcon} alt="Github logo" />
-            </a>
-            <a
-              href="https://www.instagram.com/sarahvberg"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={instagramIcon} alt="Instagram logo" />
-            </a>
-          </div>
         </div>
         <ul className="navList">
           <li>
