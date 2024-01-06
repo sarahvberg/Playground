@@ -18,11 +18,7 @@ export function HomePage() {
               <h1>Hello world! 🫶🏻 </h1>
               <p>
                 Jeg er en utvikler som elsker katten min, å ta bilder, drive med
-                planter, spise mat osv osv.
-              </p>
-              <p>
-                Dette er faktisk mitt første forsøk på egen nettside fra "bunnen
-                av", så det er ikke stort å skryte av her enda.
+                planter, spise mat, reise osv osv.
               </p>
             </div>
           </div>
