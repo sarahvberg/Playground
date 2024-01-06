@@ -3,6 +3,7 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import { AboutPage } from "./pages/AboutPage";
 import { HomePage } from "./pages/HomePage";
 import { SideNav } from "./components/SideNav";
+import { Footer } from "./components/Footer";
 import { SmallProjectsPage } from "./pages/SmallProjectsPage";
 
 function App() {
@@ -26,6 +27,7 @@ function LayoutWithHeader() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }

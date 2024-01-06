@@ -7,12 +7,14 @@ main {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
+    width: 100%;
 } 
 .fullPage {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 100vh;
 }
 body {
   margin: 0;
@@ -67,10 +69,17 @@ nav {
     -o-transition: all 5s ease-in-out;
     -ms-transition: all 5s ease-in-out;
 }
+.emoji-line {
+  font-size: 12px;
+}
 .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.socials { margin-top: 20px;}
+.socials img {
+  width: 50px;
 }
 .about-img {
   height: 100%;
@@ -167,6 +176,15 @@ header.close .menuIcon {
   z-index: -1;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
 /*Margins and paddings*/
 .mt-50 { margin-top: 50px; }
 
@@ -182,6 +200,12 @@ header.close .menuIcon {
     flex-direction: row;
     justify-content: space-between;
   }
+  .navList a {
+    font-size: 14px;
+  }
+  .emoji-line { display: none;}
+  .socials { margin-left: 20px;}
+  .socials img { width: 40px;}
   header nav ul {
     flex-direction: row;
     padding-top: 0;
@@ -194,6 +218,9 @@ header.close .menuIcon {
     padding: 0 15px;
     flex-direction: row;
   }
+  .intro span {
+    font-size: 16px;
+  }
   .about-img {
     width: 40px;
     padding: 0;
@@ -202,4 +229,5 @@ header.close .menuIcon {
     border-radius: 50% 50%;
     width: 100%;
   }
+  .menuIcon { display: none;}
 }
