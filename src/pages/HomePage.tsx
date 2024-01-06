@@ -17,8 +17,8 @@ export function HomePage() {
             <div className="col-md-8 intro mt-50">
               <h1>Hello world! 🫶🏻 </h1>
               <p>
-                Jeg er en utvikler som elsker å ta bilder, drive med planter,
-                spise mat, katten min osv osv.
+                Jeg er en utvikler som elsker katten min, å ta bilder, drive med
+                planter, spise mat osv osv.
               </p>
               <p>
                 Dette er faktisk mitt første forsøk på egen nettside fra "bunnen
