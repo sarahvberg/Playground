@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import aboutImage from "../assets/meInArt.png";
 
 export function HomePage() {
